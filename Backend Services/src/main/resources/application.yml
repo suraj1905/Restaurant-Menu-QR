@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+      
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/menu_qr
+    username: "root" 
+    password: "12345"
+#     driverClassName: com.mysql.cj.jdbc.Driver
+#     url: jdbc:mysql://localhost:3306/Bristo_Prod
+#     username: "Bristo" 
+#     password: "O5jdf&P8T562"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+logging:
+      file:
+         name: /home/ubuntu/logFile.log 
